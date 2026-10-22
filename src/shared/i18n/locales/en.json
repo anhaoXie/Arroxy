@@ -220,9 +220,9 @@
 			"too-long": "Template is too long.",
 			"unknown-token": "Unknown token {{token}}."
 		},
-		"idWarning": "Without {id}, Arroxy can't detect already-downloaded playlist items or generate .m3u playlists.",
+		"idEndingWarning": "End the name with [{id}] so Arroxy can detect already-downloaded playlist items and generate .m3u playlists.",
 		"label": "Filename template",
-		"m3uDisabled": "Unavailable because your filename template either doesn't include {id} or sorts downloads into folders.",
+		"m3uDisabledIdEnding": "Unavailable because your filename template either doesn't end with [{id}] or sorts downloads into folders.",
 		"previewPlaylist": "In a playlist",
 		"previewSingle": "Single video",
 		"profileOverrideDescription": "Leave empty to inherit the global template.",
@@ -397,6 +397,26 @@
 			"statusProbing": "Fetching details",
 			"statusRunning": "Downloading",
 			"subtitleLanguagesMissing": "No subtitles in {{languages}}"
+		},
+		"listOffer": {
+			"dismiss": "Dismiss",
+			"from": {
+				"album": "From an album",
+				"liked": "From your liked videos",
+				"mix": "From a Mix",
+				"playlist": "From a playlist",
+				"uploads": "From a channel's uploads",
+				"watchLater": "From Watch later"
+			},
+			"get": {
+				"album": "Get the whole album",
+				"liked": "Get all liked videos",
+				"mix": "Get the whole Mix",
+				"playlist": "Get the whole playlist",
+				"uploads": "Get all uploads",
+				"watchLater": "Get all of Watch later"
+			},
+			"hint": "Adds the list as its own row. This video is left out."
 		},
 		"pauseAllTitle": "Pause every active download and stop new ones from starting",
 		"pausedBanner": "The queue is paused — waiting items won't start until you resume it",
@@ -1082,6 +1102,10 @@
 			"allRemovedDescription": "Restore them to continue.",
 			"allRemovedTitle": "Every item was removed",
 			"alreadyDownloaded": "Already downloaded",
+			"bulkCappedDesc_one": "It has more. To choose how many, paste its link on its own.",
+			"bulkCappedDesc_other": "They have more. To choose how many, paste each link on its own.",
+			"bulkCappedTitle_one": "“{{title}}” is cut at {{limit}} videos",
+			"bulkCappedTitle_other": "{{count}} lists are cut at {{limit}} videos each",
 			"bulkHeading": "Bulk URLs",
 			"bulkMetadataOptional": "No need to wait — files queued now still get their real names when they download.",
 			"bulkMetadataResolving": "Fetching video details… {{done}}/{{total}}",
